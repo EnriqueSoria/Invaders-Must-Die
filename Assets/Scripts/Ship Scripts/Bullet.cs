@@ -13,8 +13,8 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		transform.position = new Vector3(transform.position.x,
-										 transform.position.y + speed,
-										 transform.position.z );
+						 transform.position.y + speed,
+						 transform.position.z );
 		if ( transform.position.y > GameManager.instance.gameWidth ){
 			Destroy(gameObject);
 		}
